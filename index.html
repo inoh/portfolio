@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>井上裕之 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>井上裕之</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">井上裕之</h1>
+                <p class="hero-subtitle">Web Developer & UI/UX Designer</p>
+                <p class="hero-description">
+                    革新的なウェブソリューションを通じて、ユーザーエクスペリエンスを向上させることに情熱を注いでいます。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">プロジェクトを見る</a>
+                    <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            フルスタック開発者として5年以上の経験を持ち、モダンなウェブテクノロジーを活用して
+                            ユーザー中心の革新的なソリューションを構築しています。
+                        </p>
+                        <p>
+                            React、Node.js、Python、そしてクラウドテクノロジーを専門とし、
+                            スケーラブルで保守性の高いアプリケーションの開発に取り組んでいます。
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">年の経験</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">完成プロジェクト</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">満足したクライアント</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Vue.js</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">CSS/Sass</span>
+                            <span class="skill-item">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Django</span>
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Cloud</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">AWS</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Figma</span>
+                            <span class="skill-item">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">Project 1</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Eコマースプラットフォーム</h3>
+                            <p class="project-description">
+                                React + Node.jsで構築されたモダンなEコマースソリューション。
+                                決済システム、在庫管理、管理者ダッシュボードを含む。
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">デモ</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">Project 2</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">タスク管理アプリ</h3>
+                            <p class="project-description">
+                                Vue.js + Pythonで開発されたチーム向けタスク管理ツール。
+                                リアルタイム同期とカンバンボード機能を搭載。
+                            </p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">デモ</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">Project 3</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">データ分析ダッシュボード</h3>
+                            <p class="project-description">
+                                リアルタイムデータ可視化のためのダッシュボード。
+                                D3.jsとChart.jsを使用したインタラクティブなグラフ。
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>D3.js</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">デモ</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>お気軽にお問い合わせください</h3>
+                        <p>新しいプロジェクトやコラボレーションの機会について話し合いませんか？</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <strong>Email:</strong>
+                                <a href="mailto:h.inoue@example.com">h.inoue@example.com</a>
+                            </div>
+                            <div class="contact-method">
+                                <strong>LinkedIn:</strong>
+                                <a href="#">linkedin.com/in/hiroyuki-inoue</a>
+                            </div>
+                            <div class="contact-method">
+                                <strong>GitHub:</strong>
+                                <a href="#">github.com/hiroyuki-inoue</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">件名</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">送信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 井上裕之. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
