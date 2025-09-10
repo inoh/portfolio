@@ -36,8 +36,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload only necessary files for static site
           path: '.'
+          exclude: |
+            .git/
+            .github/
+            *.md
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
