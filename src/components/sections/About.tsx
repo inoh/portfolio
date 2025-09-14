@@ -83,7 +83,7 @@ export default function About() {
               </div>
             </div>
             <p className="text-gray-700 leading-relaxed mb-6">
-              1998年からソフトウェア開発に携わり、Web技術の進化と共に成長してきました。
+              2000年からソフトウェア開発に携わり、Web技術の進化と共に成長してきました。
               バックエンドからフロントエンド、インフラまで幅広い技術領域をカバーし、
               特にRuby on Rails、AWS、React/Reduxの組み合わせによる
               モダンなWebアプリケーション開発を得意としています。
