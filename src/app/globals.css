@@ -3,13 +3,44 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Orange accent colors */
+  --orange-50: #fff7ed;
+  --orange-100: #ffedd5;
+  --orange-200: #fed7aa;
+  --orange-300: #fdba74;
+  --orange-400: #fb923c;
+  --orange-500: #f97316;
+  --orange-600: #ea580c;
+  --orange-700: #c2410c;
+  --orange-800: #9a3412;
+  --orange-900: #7c2d12;
+  /* Gray colors */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary-50: var(--orange-50);
+  --color-primary-100: var(--orange-100);
+  --color-primary-200: var(--orange-200);
+  --color-primary-300: var(--orange-300);
+  --color-primary-400: var(--orange-400);
+  --color-primary-500: var(--orange-500);
+  --color-primary-600: var(--orange-600);
+  --color-primary-700: var(--orange-700);
+  --color-primary-800: var(--orange-800);
+  --color-primary-900: var(--orange-900);
+  --font-sans: var(--font-inter), var(--font-noto-sans-jp), system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
