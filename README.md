@@ -57,7 +57,7 @@ npm run dev
 
 ```env
 # サイトのベースURL
-NEXT_PUBLIC_SITE_URL=https://hiroyuki-inoue.dev
+NEXT_PUBLIC_SITE_URL=https://ino-h.net
 
 # Zennのユーザー名
 NEXT_PUBLIC_ZENN_USERNAME=hiroyuki_inoue

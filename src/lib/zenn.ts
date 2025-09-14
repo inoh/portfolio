@@ -27,7 +27,7 @@ export async function fetchZennArticles(username: string): Promise<Article[]> {
       excerpt: article.body_letters_count > 100 
         ? `${article.body_updated_at}...` 
         : article.body_updated_at || '記事の詳細を確認してください。'
-    })).slice(0, 6) || []; // 最新6件を取得
+    })).slice(0, 3) || []; // 最新3件を取得
   } catch (error) {
     console.error('Error fetching Zenn articles:', error);
     
@@ -73,7 +73,7 @@ export async function fetchZennArticlesFromRSS(username: string): Promise<Articl
         });
       }
 
-      if (articles.length >= 6) break;
+      if (articles.length >= 3) break;
     }
 
     return articles;
@@ -83,35 +83,35 @@ export async function fetchZennArticlesFromRSS(username: string): Promise<Articl
   }
 }
 
-// デフォルトのモックデータ
+// デフォルトのモックデータ（実際のZenn記事データ）
 function getDefaultMockArticles(): Article[] {
   return [
     {
-      id: '1',
-      title: 'AWS Lambda と Ruby on Rails で実現するサーバーレス API',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-08-15',
-      likes: 45,
-      tags: ['AWS', 'Lambda', 'Ruby on Rails', 'サーバーレス'],
-      excerpt: 'AWS Lambdaを使用してRuby on Railsアプリケーションをサーバーレス化する手法について詳しく解説します。'
+      id: '2025-09-10-claude-code-subagents-basics',
+      title: 'Claude Code のサブエージェント機能の基本的な使い方',
+      url: 'https://zenn.dev/ino_h/articles/2025-09-10-claude-code-subagents-basics',
+      publishedAt: '2025-09-10',
+      likes: 12,
+      tags: ['Claude Code', 'AI', 'エージェント', 'プログラミング'],
+      excerpt: 'Claude Codeの新機能であるサブエージェント機能の基本的な使い方と活用事例について解説します。'
     },
     {
-      id: '2',
-      title: 'React + Redux Toolkit でのモダンな状態管理パターン',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-08-01',
-      likes: 38,
-      tags: ['React', 'Redux', 'TypeScript', 'Frontend'],
-      excerpt: 'Redux Toolkitを活用した効率的な状態管理の実装方法とベストプラクティスを紹介します。'
+      id: '2025-09-07-agentic-ai-weekly-summary',
+      title: 'エージェント型AI（Agentic AI）の最新動向 - 2025年9月第1週まとめ',
+      url: 'https://zenn.dev/ino_h/articles/2025-09-07-agentic-ai-weekly-summary',
+      publishedAt: '2025-09-07',
+      likes: 8,
+      tags: ['Agentic AI', '最新動向', 'AI', 'まとめ'],
+      excerpt: '2025年9月第1週のエージェント型AI分野における最新技術動向と注目すべき開発について紹介します。'
     },
     {
-      id: '3',
-      title: 'PostgreSQL パフォーマンスチューニングの実践テクニック',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-07-20',
-      likes: 52,
-      tags: ['PostgreSQL', 'データベース', 'パフォーマンス', 'SQL'],
-      excerpt: '大規模なWebアプリケーションでのPostgreSQLのパフォーマンス最適化手法を実例とともに解説します。'
+      id: '2024-06-29-llm-prompt-doc',
+      title: 'Anthropic のプロンプトジェネレータを使ってみた',
+      url: 'https://zenn.dev/ino_h/articles/2024-06-29-llm-prompt-doc',
+      publishedAt: '2024-06-29',
+      likes: 25,
+      tags: ['Anthropic', 'プロンプト', 'LLM', 'AI'],
+      excerpt: 'Anthropicが提供するプロンプトジェネレータの使用感と効果的な活用方法について実体験をもとに解説します。'
     }
   ];
 }

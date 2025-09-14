@@ -11,61 +11,34 @@ export default function Articles() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // フォールバック用モックデータ
+  // フォールバック用モックデータ（実際のZenn記事データ）
   const mockArticles: Article[] = [
     {
-      id: '1',
-      title: 'AWS Lambda と Ruby on Rails で実現するサーバーレス API',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-08-15',
-      likes: 45,
-      tags: ['AWS', 'Lambda', 'Ruby on Rails', 'サーバーレス'],
-      excerpt: 'AWS Lambdaを使用してRuby on Railsアプリケーションをサーバーレス化する手法について詳しく解説します。'
+      id: '2025-09-10-claude-code-subagents-basics',
+      title: 'Claude Code のサブエージェント機能の基本的な使い方',
+      url: 'https://zenn.dev/ino_h/articles/2025-09-10-claude-code-subagents-basics',
+      publishedAt: '2025-09-10',
+      likes: 12,
+      tags: ['Claude Code', 'AI', 'エージェント', 'プログラミング'],
+      excerpt: 'Claude Codeの新機能であるサブエージェント機能の基本的な使い方と活用事例について解説します。'
     },
     {
-      id: '2',
-      title: 'React + Redux Toolkit でのモダンな状態管理パターン',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-08-01',
-      likes: 38,
-      tags: ['React', 'Redux', 'TypeScript', 'Frontend'],
-      excerpt: 'Redux Toolkitを活用した効率的な状態管理の実装方法とベストプラクティスを紹介します。'
+      id: '2025-09-07-agentic-ai-weekly-summary',
+      title: 'エージェント型AI（Agentic AI）の最新動向 - 2025年9月第1週まとめ',
+      url: 'https://zenn.dev/ino_h/articles/2025-09-07-agentic-ai-weekly-summary',
+      publishedAt: '2025-09-07',
+      likes: 8,
+      tags: ['Agentic AI', '最新動向', 'AI', 'まとめ'],
+      excerpt: '2025年9月第1週のエージェント型AI分野における最新技術動向と注目すべき開発について紹介します。'
     },
     {
-      id: '3',
-      title: 'PostgreSQL パフォーマンスチューニングの実践テクニック',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-07-20',
-      likes: 52,
-      tags: ['PostgreSQL', 'データベース', 'パフォーマンス', 'SQL'],
-      excerpt: '大規模なWebアプリケーションでのPostgreSQLのパフォーマンス最適化手法を実例とともに解説します。'
-    },
-    {
-      id: '4',
-      title: 'Docker を活用した Ruby on Rails 開発環境の構築',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-07-05',
-      likes: 29,
-      tags: ['Docker', 'Ruby on Rails', '開発環境', 'DevOps'],
-      excerpt: 'Dockerを使用した一貫性のあるRails開発環境の構築方法を詳細に説明します。'
-    },
-    {
-      id: '5',
-      title: 'AWS Cost Optimization: 実践的なコスト削減戦略',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-06-15',
-      likes: 67,
-      tags: ['AWS', 'コスト削減', 'インフラ', 'クラウド'],
-      excerpt: '実際のプロジェクトで月間100万円のAWSコストを削減した具体的な手法と戦略を公開します。'
-    },
-    {
-      id: '6',
-      title: 'Next.js 14 App Router での SEO 最適化完全ガイド',
-      url: 'https://zenn.dev/ino_h',
-      publishedAt: '2024-06-01',
-      likes: 41,
-      tags: ['Next.js', 'SEO', 'React', 'Web開発'],
-      excerpt: 'Next.js 14のApp Routerを使用したSEO対策の実装方法とパフォーマンス最適化について解説します。'
+      id: '2024-06-29-llm-prompt-doc',
+      title: 'Anthropic のプロンプトジェネレータを使ってみた',
+      url: 'https://zenn.dev/ino_h/articles/2024-06-29-llm-prompt-doc',
+      publishedAt: '2024-06-29',
+      likes: 25,
+      tags: ['Anthropic', 'プロンプト', 'LLM', 'AI'],
+      excerpt: 'Anthropicが提供するプロンプトジェネレータの使用感と効果的な活用方法について実体験をもとに解説します。'
     }
   ];
 
@@ -142,8 +115,8 @@ export default function Articles() {
               Articles
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[...Array(6)].map((_, i) => (
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {[...Array(3)].map((_, i) => (
               <div key={i} className="bg-gray-100 rounded-xl p-6 animate-pulse">
                 <div className="h-4 bg-gray-200 rounded mb-4"></div>
                 <div className="h-4 bg-gray-200 rounded mb-2"></div>
@@ -185,9 +158,9 @@ export default function Articles() {
             Articles
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            技術的な学びや実践で得た知見を記事として発信しています。
+            Zennで技術記事を発信しています。最新3記事をご紹介します。
             <br className="hidden md:block" />
-            最新の開発手法や問題解決のアプローチを共有します。
+            AI・エージェント技術を中心とした実践的な内容をお届けしています。
           </p>
         </motion.div>
 

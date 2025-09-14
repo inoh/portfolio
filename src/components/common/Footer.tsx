@@ -44,10 +44,10 @@ export default function Footer() {
             <div className="flex items-center text-gray-300">
               <Mail className="w-4 h-4 mr-2" />
               <a 
-                href="mailto:contact@hiroyuki-inoue.dev" 
+                href="mailto:contact@ino-h.net" 
                 className="hover:text-primary-400 transition-colors"
               >
-                contact@hiroyuki-inoue.dev
+                contact@ino-h.net
               </a>
             </div>
           </motion.div>

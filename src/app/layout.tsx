@@ -15,7 +15,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hiroyuki-inoue.dev'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://ino-h.net'),
   title: "井上 裕之 | フリーランス フルスタックエンジニア",
   description: "25年の経験を持つフルスタックエンジニア。Ruby on Rails、AWS、React/Reduxを軸にスケーラブルなWebアプリケーションを開発しています。",
   keywords: ["フリーランス", "フルスタックエンジニア", "Ruby on Rails", "AWS", "React", "Redux", "TypeScript", "井上裕之"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://hiroyuki-inoue.dev",
+    url: "https://ino-h.net",
     siteName: "井上 裕之 | フリーランス フルスタックエンジニア",
     title: "井上 裕之 | フリーランス フルスタックエンジニア",
     description: "25年の経験を持つフルスタックエンジニア。Ruby on Rails、AWS、React/Reduxを軸にスケーラブルなWebアプリケーションを開発しています。",
