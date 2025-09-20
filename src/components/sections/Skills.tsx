@@ -2,9 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Award, Star } from 'lucide-react';
+import { MainSkill } from '@/types';
 
 export default function Skills() {
-  const mainSkills = [
+  const mainSkills: MainSkill[] = [
     {
       name: 'Ruby on Rails',
       years: 15,
@@ -15,6 +16,7 @@ export default function Skills() {
         'マイクロサービスアーキテクチャ設計',
         'パフォーマンスチューニング',
       ],
+      certifications: ['Ruby Association Certified Ruby Programmer Gold'],
       icon: '💎',
     },
     {
@@ -27,7 +29,7 @@ export default function Skills() {
         'Auto Scaling設計・構築',
         '月間100万円のコスト削減実績',
       ],
-      certifications: ['AWS Solutions Architect Professional'],
+      certifications: ['AWS Solutions Architect Associate'],
       icon: '☁️',
     },
     {
@@ -40,6 +42,7 @@ export default function Skills() {
         'リアルタイム機能実装',
         'レスポンシブUI/UX設計',
       ],
+      certifications: [],
       icon: '⚛️',
     },
   ];
@@ -156,7 +159,7 @@ export default function Skills() {
                   {skill.description}
                 </p>
 
-                {skill.certifications && (
+                {skill.certifications && skill.certifications.length > 0 && (
                   <div className="mb-6">
                     <div className="flex items-center mb-2">
                       <Award className="w-4 h-4 text-primary-600 mr-2" />

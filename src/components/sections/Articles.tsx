@@ -18,7 +18,7 @@ export default function Articles() {
       title: 'Claude Code のサブエージェント機能の基本的な使い方',
       url: 'https://zenn.dev/ino_h/articles/2025-09-10-claude-code-subagents-basics',
       publishedAt: '2025-09-10',
-      likes: 12,
+      likes: 0,
       tags: ['Claude Code', 'AI', 'エージェント', 'プログラミング'],
       excerpt: 'Claude Codeの新機能であるサブエージェント機能の基本的な使い方と活用事例について解説します。'
     },
@@ -27,7 +27,7 @@ export default function Articles() {
       title: 'エージェント型AI（Agentic AI）の最新動向 - 2025年9月第1週まとめ',
       url: 'https://zenn.dev/ino_h/articles/2025-09-07-agentic-ai-weekly-summary',
       publishedAt: '2025-09-07',
-      likes: 8,
+      likes: 1,
       tags: ['Agentic AI', '最新動向', 'AI', 'まとめ'],
       excerpt: '2025年9月第1週のエージェント型AI分野における最新技術動向と注目すべき開発について紹介します。'
     },
@@ -36,7 +36,7 @@ export default function Articles() {
       title: 'Anthropic のプロンプトジェネレータを使ってみた',
       url: 'https://zenn.dev/ino_h/articles/2024-06-29-llm-prompt-doc',
       publishedAt: '2024-06-29',
-      likes: 25,
+      likes: 2,
       tags: ['Anthropic', 'プロンプト', 'LLM', 'AI'],
       excerpt: 'Anthropicが提供するプロンプトジェネレータの使用感と効果的な活用方法について実体験をもとに解説します。'
     }
