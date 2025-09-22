@@ -1,6 +1,4 @@
-'use client';
-
-import { Component, ReactNode } from 'react';
+import React, { Component, ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;

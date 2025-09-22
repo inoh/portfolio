@@ -1,8 +1,7 @@
-'use client';
-
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Star } from 'lucide-react';
-import { MainSkill } from '@/types';
+import { MainSkill } from '../../types';
 
 export default function Skills() {
   const mainSkills: MainSkill[] = [

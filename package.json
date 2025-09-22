@@ -3,25 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start"
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
+    "gatsby": "^5.13.0",
+    "gatsby-plugin-image": "^3.13.0",
+    "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-react-helmet": "^6.13.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-source-filesystem": "^5.13.0",
+    "gatsby-transformer-sharp": "^5.13.0",
     "lucide-react": "^0.544.0",
-    "next": "15.5.3",
-    "next-seo": "^6.8.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "sharp": "^0.34.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "tailwindcss": "^4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-helmet": "^6",
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.13.0",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
 }

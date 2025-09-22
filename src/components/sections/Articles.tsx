@@ -1,10 +1,8 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Heart, ExternalLink, Tag } from 'lucide-react';
-import { Article } from '@/types';
-import { fetchZennArticlesFromRSS, fetchZennArticles } from '@/lib/zenn';
+import { Article } from '../../types';
+import { fetchZennArticlesFromRSS, fetchZennArticles } from '../../lib/zenn';
 
 export default function Articles() {
   const [articles, setArticles] = useState<Article[]>([]);

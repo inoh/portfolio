@@ -1,7 +1,4 @@
-'use client';
-
-import { useState } from 'react';
-import Image from 'next/image';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 interface LazyImageProps {
@@ -35,19 +32,18 @@ export default function LazyImage({
         animate={{ opacity: isLoading ? 0 : 1 }}
         transition={{ duration: 0.3 }}
       >
-        <Image
+        <img
           src={src}
           alt={alt}
           width={width}
           height={height}
-          priority={priority}
+          loading={priority ? "eager" : "lazy"}
           className={`${className} ${hasError ? 'hidden' : ''}`}
           onLoad={() => setIsLoading(false)}
           onError={() => {
             setIsLoading(false);
             setHasError(true);
           }}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </motion.div>
       

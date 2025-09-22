@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -25,22 +27,7 @@
   --gray-700: #374151;
   --gray-800: #1f2937;
   --gray-900: #111827;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary-50: var(--orange-50);
-  --color-primary-100: var(--orange-100);
-  --color-primary-200: var(--orange-200);
-  --color-primary-300: var(--orange-300);
-  --color-primary-400: var(--orange-400);
-  --color-primary-500: var(--orange-500);
-  --color-primary-600: var(--orange-600);
-  --color-primary-700: var(--orange-700);
-  --color-primary-800: var(--orange-800);
-  --color-primary-900: var(--orange-900);
-  --font-sans: var(--font-inter), var(--font-noto-sans-jp), system-ui, sans-serif;
+  --font-sans: 'Inter', 'Noto Sans JP', system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

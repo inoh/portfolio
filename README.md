@@ -4,12 +4,12 @@
 
 ## 🚀 技術スタック
 
-- **フレームワーク**: Next.js 15 (App Router)
+- **フレームワーク**: Gatsby v5
 - **言語**: TypeScript
-- **スタイリング**: Tailwind CSS
+- **スタイリング**: Tailwind CSS v3
 - **アニメーション**: Framer Motion
 - **アイコン**: Lucide React
-- **デプロイ**: Vercel
+- **デプロイ**: GitHub Pages
 - **外部API**: Zenn API (記事取得)
 
 ## 📋 機能
@@ -51,16 +51,16 @@ cp .env.example .env.local
 npm run dev
 ```
 
-ブラウザで [http://localhost:3000](http://localhost:3000) を開いて確認できます。
+ブラウザで [http://localhost:8000](http://localhost:8000) を開いて確認できます。
 
 ### 環境変数
 
 ```env
 # サイトのベースURL
-NEXT_PUBLIC_SITE_URL=https://ino-h.net
+SITE_URL=https://ino-h.github.io/portfolio
 
 # Zennのユーザー名
-NEXT_PUBLIC_ZENN_USERNAME=hiroyuki_inoue
+ZENN_USERNAME=ino_h
 ```
 
 ## 📦 ビルド・デプロイ
@@ -68,13 +68,18 @@ NEXT_PUBLIC_ZENN_USERNAME=hiroyuki_inoue
 ### 本番ビルド
 ```bash
 npm run build
-npm run start
+npm run serve  # ローカルでビルド結果をプレビュー
 ```
 
-### Vercelへのデプロイ
-1. Vercelアカウントでプロジェクトをインポート
-2. 環境変数を設定
-3. 自動デプロイが実行される
+### GitHub Pagesへのデプロイ
+
+#### 自動デプロイ（GitHub Actions）
+mainブランチにプッシュすると自動的にGitHub Pagesにデプロイされます。
+
+#### 手動デプロイ
+```bash
+npm run deploy
+```
 
 ## 🎨 カスタマイズ
 
