@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
     title: "Hiroyuki Inoue | ポートフォリオ",
     description: "エージェンティックAI研究者のHiroyuki Inoueです。AIのポテンシャルを最大限に引き出し、人間の創造性を拡張することを目指しています。",
     author: "Hiroyuki Inoue",
-    siteUrl: "https://ino-h.github.io/portfolio",
+    siteUrl: "https://inoh.github.io/portfolio",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -57,7 +57,7 @@ npm run dev
 
 ```env
 # サイトのベースURL
-SITE_URL=https://ino-h.github.io/portfolio
+SITE_URL=https://inoh.github.io/portfolio
 
 # Zennのユーザー名
 ZENN_USERNAME=ino_h
