@@ -17,6 +17,8 @@
 .cache/
 public/
 gatsby-types.d.ts
+# docs is used for GitHub Pages
+!docs/
 
 # production
 /build

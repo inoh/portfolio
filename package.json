@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths && rm -rf docs && mv public docs",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "clean": "gatsby clean && rm -rf docs",
+    "deploy": "npm run build && git add docs && git commit -m 'Update GitHub Pages' && git push"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
