@@ -57,7 +57,7 @@ export const Head: HeadFC = () => {
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="ja_JP" />
-      <meta property="og:url" content="https://inoh.github.io/portfolio" />
+      <meta property="og:url" content="https://ino-h.net" />
       <meta property="og:site_name" content="井上 裕之 | フリーランス フルスタックエンジニア" />
       <meta property="og:title" content="井上 裕之 | フリーランス フルスタックエンジニア" />
       <meta property="og:description" content="25年の経験を持つフルスタックエンジニア。Ruby on Rails、AWS、React/Reduxを軸にスケーラブルなWebアプリケーションを開発しています。" />

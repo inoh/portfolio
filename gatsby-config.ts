@@ -1,12 +1,12 @@
 import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
-  pathPrefix: "/portfolio",
+  // pathPrefix: "/portfolio", // カスタムドメイン使用時は不要
   siteMetadata: {
     title: "Hiroyuki Inoue | ポートフォリオ",
     description: "エージェンティックAI研究者のHiroyuki Inoueです。AIのポテンシャルを最大限に引き出し、人間の創造性を拡張することを目指しています。",
     author: "Hiroyuki Inoue",
-    siteUrl: "https://inoh.github.io/portfolio",
+    siteUrl: "https://ino-h.net",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

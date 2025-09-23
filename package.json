@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build --prefix-paths && rm -rf docs && mv public docs",
+    "build": "gatsby build && rm -rf docs && mv public docs",
     "serve": "gatsby serve",
     "clean": "gatsby clean && rm -rf docs",
     "deploy": "npm run build && git add docs && git commit -m 'Update GitHub Pages' && git push"
