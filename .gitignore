@@ -13,6 +13,10 @@
 # testing
 /coverage
 
+# next.js (should be removed but just in case)
+.next/
+next-env.d.ts
+
 # gatsby
 .cache/
 public/
